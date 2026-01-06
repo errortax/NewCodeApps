@@ -1,73 +1,71 @@
-# React + TypeScript + Vite
+# Email Order Management - Code Apps Test Repository
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a test repository for code apps to replicate the **Email Order Management** functionality from Power Apps low-code using **VS professional code**.
 
-Currently, two official plugins are available:
+![Using VS Code](UsingVS.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## React Compiler
+This project demonstrates how to build professional-grade applications using modern web technologies (React, TypeScript, Vite) that replicate Power Apps low-code patterns. It serves as a proof-of-concept for transitioning from Power Apps low-code to professional code development using Visual Studio Code.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Project Structure
 
-## Expanding the ESLint configuration
+- **my-sample-app/** - React + TypeScript application for email order management
+- **pcf-hello/** - Power Component Framework (PCF) control for integration with Power Apps
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Technology Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Frontend:** React 18 with TypeScript
+- **Build Tool:** Vite
+- **Styling:** CSS
+- **Package Manager:** npm
+- **Code Quality:** ESLint
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
+- Node.js 16.x or 18.x
+- npm or yarn
+
+### Installation
+
+```bash
+cd my-sample-app
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+Vite will start a development server with Hot Module Replacement (HMR) for fast development feedback.
+
+### Build
+
+```bash
+npm run build
+```
+
+Production-ready files will be generated in the `dist/` directory.
+
+## Features
+
+- Email order management functionality
+- Low-code Power Apps patterns replicated in professional code
+- Type-safe development with TypeScript
+- Modern React patterns and best practices
+- Fast development experience with Vite
+
+## Purpose
+
+This repository serves as a learning resource and template for teams looking to:
+- Transition from Power Apps low-code to professional code development
+- Understand modern web development practices
+- Replicate Power Apps functionality in React
+- Maintain code quality with type safety and linting
+
+## Contributing
+
+Feel free to contribute improvements, bug fixes, or enhancements to this test repository.
